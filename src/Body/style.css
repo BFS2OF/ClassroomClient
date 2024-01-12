@@ -1,0 +1,22 @@
+.Body-content {
+    overflow: hidden;
+    color: black;
+    justify-content: space-around;
+    margin: 10rem;
+    font-family: "Inter", sans-serif;
+}
+
+.center {
+    margin-top: 5rem;
+}
+.Name {
+    color: #13662F;
+}
+
+.Greet {
+    margin: 0rem;
+}
+
+.Text {
+    margin: 0rem;
+}
