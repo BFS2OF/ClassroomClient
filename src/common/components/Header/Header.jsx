@@ -1,6 +1,7 @@
 import "./styles.css";
-import Schule from "../media/bs2ab.png";
-export const Navigation = () => {
+import Schule from "@/common/assets/img/bs2ab.png";
+
+export const Header = () => {
     return (
         <header>
             <div className="header">
@@ -9,8 +10,8 @@ export const Navigation = () => {
                     <h1>Fragenportal <span className="Host">Host</span></h1>
                 </div>
 
-                <h1 className="MTLM">MTLM Product</h1>
+                <h2>MTLM Product</h2>
             </div>
         </header>
-    )
+    );
 }
