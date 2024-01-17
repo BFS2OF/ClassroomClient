@@ -1,0 +1,1 @@
+export {QuizInformation as default} from "./QuizInformation.jsx";

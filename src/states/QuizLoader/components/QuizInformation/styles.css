@@ -1,0 +1,33 @@
+.quiz-information {
+    border: 2px solid #13662F;
+    border-radius: 1rem;
+    padding: 1.5rem 0.5rem;
+    overflow-y: scroll;
+    height: 15rem;
+}
+
+.quiz-information h1, p {
+    margin: 0;
+}
+
+.question-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-item {
+    display: flex;
+}
+
+.question-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #13662F;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
