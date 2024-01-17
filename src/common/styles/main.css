@@ -8,3 +8,20 @@ body {
     backdrop-filter: blur(10px);
     height: 100vh;
 }
+
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #13662F;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #13662F;
+}
+
