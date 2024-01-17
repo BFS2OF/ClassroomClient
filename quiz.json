@@ -1,0 +1,24 @@
+{
+  "__format": "BFS2QUIZ",
+  "info": {
+    "title": "Open Day Quiz",
+    "description": "Fragen zur Schule am Open Day"
+  },
+  "questions": [
+
+    {
+      "title": "Wann beginnt eine Woche?",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Montag", "Dienstag", "Donnerstag", "Sonntag"],
+      "correctAnswer": 1
+    },
+
+    {
+      "question": "In welcher Stadt befinden wir uns?",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Aschaffenburg", "Miltenberg", "Würzburg", "Frankfurt"],
+      "correctAnswer": 1
+    }
+
+  ]
+}
