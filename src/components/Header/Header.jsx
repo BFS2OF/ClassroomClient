@@ -15,6 +15,3 @@ export const Header = () => {
         </header>
     );
 }
-
-export class Header2 {
-}
