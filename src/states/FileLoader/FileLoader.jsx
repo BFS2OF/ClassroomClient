@@ -2,15 +2,27 @@ import "./styles.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFileArrowUp} from "@fortawesome/free-solid-svg-icons";
 import DragNDrop from "@/common/assets/img/dragndrop.png";
-import {useEffect, useRef} from "react";
+import {useContext, useEffect, useRef} from "react";
+import {QuizContext} from "@/common/contexts/QuizContext.jsx";
 
 export const FileLoader = () => {
 
     const dropRef = useRef();
     const inputFile = useRef(null);
+    const {updateQuiz} = useContext(QuizContext);
 
     const uploadFile = (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
 
+        reader.onload = (e) => {
+            const quiz = e.target.result;
+            if (!updateQuiz(quiz)) {
+                alert("Invalid quiz format");
+            }
+        }
+
+        reader.readAsText(file);
     }
 
     const handleDragOver = (e) => {
@@ -22,20 +34,31 @@ export const FileLoader = () => {
         e.preventDefault();
         e.stopPropagation();
 
-        const {files} = e.dataTransfer;
+        const file = e.dataTransfer.files[0];
 
-        if (files && files.length) {
-            alert("ToDo");
+        const reader = new FileReader();
+
+        reader.onload = (e) => {
+            const quiz = e.target.result;
+            if (!updateQuiz(quiz)) {
+                alert("Invalid quiz format");
+            }
         }
+
+        reader.readAsText(file);
     }
 
     useEffect(() => {
-        dropRef.current.addEventListener('dragover', handleDragOver);
-        dropRef.current.addEventListener('drop', handleDrop);
+        dropRef.current?.addEventListener('dragover', handleDragOver);
+        dropRef.current?.addEventListener('drop', handleDrop);
+
+        inputFile.current.addEventListener('change', uploadFile);
 
         return () => {
-            dropRef.current.removeEventListener('dragover', handleDragOver);
-            dropRef.current.removeEventListener('drop', handleDrop);
+            dropRef.current?.removeEventListener('dragover', handleDragOver);
+            dropRef.current?.removeEventListener('drop', handleDrop);
+
+            inputFile.current?.removeEventListener('change', uploadFile);
         };
     }, []);
 
