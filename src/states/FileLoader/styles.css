@@ -37,6 +37,12 @@
     margin-top: 2rem;
     font-weight: bold;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
 }
 
 .dateiupload {
@@ -44,7 +50,8 @@
 }
 
 .container-right {
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(100px);
     height: 30rem;
     width: 28rem;
     color: black;
