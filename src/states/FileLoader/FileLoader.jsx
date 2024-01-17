@@ -7,11 +7,16 @@ import {useEffect, useRef} from "react";
 export const FileLoader = () => {
 
     const dropRef = useRef();
+    const inputFile = useRef(null);
+
+    const uploadFile = (e) => {
+
+    }
 
     const handleDragOver = (e) => {
         e.preventDefault();
         e.stopPropagation();
-    };
+    }
 
     const handleDrop = (e) => {
         e.preventDefault();
@@ -22,7 +27,7 @@ export const FileLoader = () => {
         if (files && files.length) {
             alert("ToDo");
         }
-    };
+    }
 
     useEffect(() => {
         dropRef.current.addEventListener('dragover', handleDragOver);
@@ -36,6 +41,7 @@ export const FileLoader = () => {
 
     return (
         <div className="fl-wrapper">
+            <input type='file' id='file' ref={inputFile} style={{display: 'none'}} />
             <div className="center">
                 <div className="center-left">
                     <h1 className="Greet">
@@ -45,7 +51,7 @@ export const FileLoader = () => {
                         Starten Sie ein Quiz indem Sie die Schaltfläche “Datei auswählen”
                         klicken, oder eine Datei in den rechten Bereich ziehen.
                     </p>
-                    <button className="button">
+                    <button className="button" onClick={() => inputFile.current.click()}>
                         <FontAwesomeIcon className="dateiupload" icon={faFileArrowUp}/>
                         Datei auswählen...
                     </button>
