@@ -7,6 +7,3 @@ export const Footer = () => {
         </footer>
     );
 }
-
-export class Footer2 {
-}
