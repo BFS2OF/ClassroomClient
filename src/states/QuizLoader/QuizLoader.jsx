@@ -5,7 +5,7 @@ import {QuizContext} from "@/common/contexts/QuizContext.jsx";
 import {useContext} from "react";
 import QuizInformation from "@/states/QuizLoader/components/QuizInformation";
 
-export const QuizLoader = () => {
+export const QuizLoader = ({setState}) => {
     const {quiz} = useContext(QuizContext);
 
     return (
@@ -19,7 +19,7 @@ export const QuizLoader = () => {
                     <p className="Text">
                         Das Quiz wurde geladen. Klicke “Raum öffnen”, um den Raum zu erstellen.
                     </p>
-                    <button className="button">
+                    <button className="button" onClick={() => setState("waiting")}>
                         <FontAwesomeIcon className="dateiupload" icon={faGamepad}/>
                         Raum öffnen
                     </button>
