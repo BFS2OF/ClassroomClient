@@ -1,0 +1,156 @@
+.qr-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 100;
+}
+
+.qr-big {
+    width: 25vw;
+    height: 25vw;
+    border: 1rem solid white;
+    border-radius: 2rem;
+    cursor: zoom-out;
+}
+
+
+.waiting-room {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    height: 90vh;
+}
+
+.quiz-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.quiz-descriptor h2, .quiz-descriptor p {
+    margin: 0;
+}
+
+.quiz-descriptor h2 {
+    font-size: 2rem;
+}
+
+.quiz-descriptor p {
+    font-size: 1.2rem;
+}
+
+.qr {
+    cursor: zoom-in;
+    width: 100px;
+    height: 100px;
+    border: 0.2rem solid white;
+    border-radius: 0.2rem;
+}
+
+.info-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-area h3 {
+    margin: 0;
+    max-width: 25rem;
+    font-size: 18pt;
+}
+
+.info-area span {
+    color: #13662F;
+    font-weight: bolder;
+}
+
+.info-area h1 {
+    background-color: #13662F;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    margin: 0;
+    width: fit-content;
+}
+
+.player-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.player-header h2 span {
+    background-color: #13662F;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+}
+
+.player-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 20rem;
+}
+
+.player-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: #13662F;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.player-item img {
+    height: 2rem;
+}
+
+.player-list {
+    min-width: 20rem;
+    max-width: 30rem;
+    margin-top: 1rem;
+
+    justify-content: center;
+}
+
+.player-list .no-players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    background-color: white;
+    color: black;
+
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.player-list .no-players svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.player-list .no-players p {
+    margin: 0;
+}
