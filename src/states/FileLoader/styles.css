@@ -22,23 +22,29 @@
 }
 
 .Text {
-    margin: 0rem;
     font-size: 13pt;
     font-weight: bold;
     max-width: 30rem;
+    margin: 0 0 2rem;
 }
 
 .button {
+    display: flex;
+    align-items: center;
     background-color: #13662F;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: white;
     font-size: 20pt;
-    margin-top: 2rem;
     font-weight: bold;
     border: none;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+.button:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
 }
 
 .button:hover {
