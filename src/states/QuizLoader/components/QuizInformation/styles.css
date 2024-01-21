@@ -4,6 +4,7 @@
     padding: 1.5rem 0.5rem;
     overflow-y: scroll;
     height: 15rem;
+    width: 20rem;
 }
 
 .quiz-information h1, p {
@@ -18,16 +19,25 @@
 
 .question-item {
     display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .question-circle {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10rem;
     background-color: #13662F;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0.5rem;
+    font-weight: 700;
+}
+
+.question-text {
+    font-size: 14pt;
+    margin: 0;
+    width: 80%;
 }
