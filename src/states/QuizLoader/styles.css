@@ -1,6 +1,6 @@
 .quiz-container {
     overflow: hidden;
-    color: black;
+    color: #212128;
     justify-content: space-around;
     font-family: "Inter", sans-serif;
 }
@@ -18,41 +18,12 @@
 }
 
 .Greet {
-    margin: 0rem;
+    margin: 0;
 }
 
 .Text {
-    margin: 0rem;
+    margin: 0;
     font-size: 13pt;
     font-weight: bold;
     max-width: 30rem;
-}
-
-.button {
-    background-color: #13662F;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 20pt;
-    margin-top: 2rem;
-    font-weight: bold;
-    border: none;
-}
-
-.dateiupload {
-    padding-right: 0.5rem;
-}
-
-.container-right {
-    background-color: transparent;
-    height: 30rem;
-    width: 28rem;
-    color: black;
-    border-radius: 0.5rem;
-    border: 2pt dashed #FEFEFE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
 }
