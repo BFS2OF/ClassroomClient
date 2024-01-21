@@ -3,26 +3,22 @@ import {QuizContext} from "@/common/contexts/QuizContext.jsx";
 import {useContext} from "react";
 
 export const QuizInformation = () => {
-    const {quiz} = useContext(QuizContext);
+    const {quiz, questions} = useContext(QuizContext);
 
     if (quiz === null) return <></>;
 
     return (
         <div className="quiz-information">
-            <h1>{quiz.info.title}</h1>
-            <p>{quiz.info.description}</p>
+            <h1>{quiz.title}</h1>
+            <p>{quiz.description}</p>
 
             <div className="question-list">
-                {quiz.questions.map((question, index) => (
+                {questions.map((question, index) => (
                     <div className="question-item" key={index}>
                         <p className="question-circle">{index + 1}</p>
-                        <span className="question-text">{question.title}</span>
+                        <p className="question-text">{question.title}</p>
                     </div>
                 ))}
-
-                <main style={{height: "50rem"}}>
-
-                </main>
             </div>
 
         </div>
