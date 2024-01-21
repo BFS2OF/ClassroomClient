@@ -14,7 +14,7 @@
     },
 
     {
-      "question": "In welcher Stadt befinden wir uns?",
+      "title": "In welcher Stadt befinden wir uns?",
       "type": "SINGLE_CHOICE",
       "answers": ["Aschaffenburg", "Miltenberg", "Würzburg", "Frankfurt"],
       "correctAnswer": 1
