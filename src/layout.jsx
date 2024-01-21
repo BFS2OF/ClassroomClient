@@ -2,9 +2,12 @@ import Header from "./common/components/Header";
 import Footer from "./common/components/Footer";
 import QuizLoader from "@/states/QuizLoader";
 import FileLoader from "@/states/FileLoader";
+import WaitingRoom from "@/states/WaitingRoom";
 
 import {useContext, useEffect, useState} from "react";
 import {QuizContext} from "@/common/contexts/QuizContext.jsx";
+import "@/common/util/socket.js";
+import {socket} from "@/common/util/socket.js";
 
 export default () => {
 
@@ -12,6 +15,16 @@ export default () => {
     const {quiz} = useContext(QuizContext);
 
     useEffect(() => {
+        socket.connect();
+
+        return () => {
+            socket.disconnect();
+        }
+    }, []);
+
+    useEffect(() => {
+        if (quiz === "file" || quiz === "quiz") return;
+
         if (quiz === null) {
             setState("file");
         } else {
@@ -24,7 +37,9 @@ export default () => {
             <Header/>
             <main>
                 {state === "file" && <FileLoader/>}
-                {state === "quiz" && <QuizLoader/>}
+                {state === "quiz" && <QuizLoader setState={setState}/>}
+                {state === "waiting" && <WaitingRoom setState={setState}/>}
+                {state === "ingame" && <></>}
             </main>
             <Footer/>
         </>
