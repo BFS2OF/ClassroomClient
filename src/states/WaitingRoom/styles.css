@@ -119,6 +119,7 @@
     border-radius: 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+    animation: bounceIn 0.5s ease-in-out;
 }
 
 .player-item img {
@@ -153,4 +154,18 @@
 
 .player-list .no-players p {
     margin: 0;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
