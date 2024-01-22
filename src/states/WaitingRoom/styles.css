@@ -104,7 +104,7 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    overflow-y: scroll;
+    overflow-y: hidden;
     max-height: 20rem;
 }
 
