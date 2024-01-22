@@ -8,6 +8,8 @@ import {useContext, useEffect, useState} from "react";
 import {QuizContext} from "@/common/contexts/QuizContext.jsx";
 import "@/common/util/socket.js";
 import {socket} from "@/common/util/socket.js";
+import InGame from "@/states/InGame/index.js";
+import Ending from "@/states/Ending/index.js";
 
 export default () => {
 
@@ -39,7 +41,8 @@ export default () => {
                 {state === "file" && <FileLoader/>}
                 {state === "quiz" && <QuizLoader setState={setState}/>}
                 {state === "waiting" && <WaitingRoom setState={setState}/>}
-                {state === "ingame" && <></>}
+                {state === "ingame" && <InGame setState={setState}/>}
+                {state === "ending" && <Ending />}
             </main>
             <Footer/>
         </>
