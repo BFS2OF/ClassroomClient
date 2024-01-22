@@ -22,15 +22,8 @@ export const QuizProvider = ({children}) => {
         }
     }
 
-    const pullQuestion = () => {
-        if (questions.length === 0) return null;
-        const question = questions[0];
-        setQuestions(question => questions.slice(1));
-        return question;
-    }
-
     return (
-        <QuizContext.Provider value={{quiz, updateQuiz, questions, pullQuestion}}>
+        <QuizContext.Provider value={{quiz, updateQuiz, questions, setQuestions}}>
             {children}
         </QuizContext.Provider>
     )
