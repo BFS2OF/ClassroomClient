@@ -1,0 +1,111 @@
+.game-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    gap: 3rem;
+    z-index: 5;
+}
+
+.game-page * {
+    transition: all 0.5s ease-in-out;
+}
+
+.correct-answer-text {
+    margin-top: 6rem;
+    background-color: black;
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.countdown {
+    z-index: 20;
+    user-select: none;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown h1 {
+    z-index: 3;
+    color: #FFFFFF;
+    font-size: 48pt;
+}
+
+.countdown svg {
+    z-index: 3;
+    color: #FFFFFF;
+    font-size: 48pt;
+}
+
+.answer-wrong svg {
+    color: #C34040;
+}
+
+.answer-correct svg {
+    color: #287B44;
+}
+
+.countdown .background {
+    z-index: 2;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    background-color: black;
+}
+
+.countdown-circle {
+    z-index: 1;
+    width: 11rem;
+    height: 11rem;
+    position: absolute;
+    border-radius: 10rem;
+    transform: rotate(-90deg);
+    background: conic-gradient(#13662F 0%, #13662F 50%, transparent 50%, transparent 100%);
+    transform-origin: center;
+    animation: countdown 2s infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes countdown {
+    0% {
+        transform: rotate(-90deg);
+        filter: hue-rotate(360deg);
+    }
+    50% {
+        transform: rotate(270deg);
+        filter: hue-rotate(90deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sc-answers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    user-select: none;
+}
+
+.yn-answers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+    .sc-answers-container {
+        gap: 1rem;
+    }
+    .yn-answers-container {
+        flex-direction: column;
+    }
+}
