@@ -1,0 +1,83 @@
+.ending {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.ending .page-chooser {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.41);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem;
+    border-radius: 1rem;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.ending .page-chooser .page-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #212128;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.ending .page-chooser .page-item:hover:not(.page-item-active) {
+    transform: scale(1.05);
+    background-color: #d0d0d0;
+}
+
+.ending .page-chooser .page-item-active {
+    background-color: #212128;
+    color: white;
+}
+
+.ending .page-chooser .page-item h3 {
+    margin: 0;
+}
+
+.podium {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.place-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.podest-block {
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+.third-place .podest-block {
+    height: 10rem;
+    background-color: #AA5F1A;
+}
+
+.second-place .podest-block {
+    height: 22rem;
+    background-color: #717171;
+}
+
+.first-place .podest-block {
+    height: 30rem;
+    background-color: #E8912B;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard-item {
+
+}
