@@ -50,7 +50,7 @@ export const WaitingRoom = ({setState}) => {
         <div className="waiting-room">
             <Sound url={WaitingMusic} playStatus={Sound.status.PLAYING} loop={true}/>
             {qrShown && <div className="qr-dialog" onClick={() => setQrShown(!qrShown)}>
-                <QRCode value={`https://studentclient.pages.dev/?join=${roomCode}`} className="qr-big"
+                <QRCode value={`https://studentclient.pages.dev/?code=${roomCode}`} className="qr-big"
                         renderAs="svg"/>
             </div>}
 
@@ -61,7 +61,7 @@ export const WaitingRoom = ({setState}) => {
                         <p>{quiz.description}</p>
                     </div>
 
-                    <QRCode value={`https://studentclient.pages.dev/?join=${roomCode}`} className="qr"
+                    <QRCode value={`https://studentclient.pages.dev/?code=${roomCode}`} className="qr"
                             renderAs="svg" onClick={() => setQrShown(!qrShown)}/>
                 </div>
 
