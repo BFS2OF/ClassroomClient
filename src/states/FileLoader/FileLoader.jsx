@@ -7,6 +7,8 @@ import {QuizContext} from "@/common/contexts/QuizContext.jsx";
 
 export const FileLoader = () => {
 
+    const HOST_URL = "https://pastefy.app/%s/raw";
+
     const dropRef = useRef();
     const inputFile = useRef(null);
     const {updateQuiz} = useContext(QuizContext);
@@ -49,6 +51,20 @@ export const FileLoader = () => {
     }
 
     useEffect(() => {
+        const url = new URL(window.location.href);
+        const loadFile = url.searchParams.get("quizId");
+
+        if (loadFile) {
+            fetch(HOST_URL.replace("%s", loadFile))
+                .then(res => res.text())
+                .then(quiz => {
+                    console.log(quiz);
+                    if (!updateQuiz(quiz)) {
+                        alert("Invalid quiz format");
+                    }
+                })
+                .catch(e => alert("Invalid quiz format"));
+        }
         dropRef.current?.addEventListener('dragover', handleDragOver);
         dropRef.current?.addEventListener('drop', handleDrop);
 
