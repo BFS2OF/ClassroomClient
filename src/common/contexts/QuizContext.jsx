@@ -1,4 +1,5 @@
 import {createContext, useState} from "react";
+import {Buffer} from "buffer";
 
 export const QuizContext = createContext({});
 
@@ -9,12 +10,12 @@ export const QuizProvider = ({children}) => {
 
     const updateQuiz = (quiz) => {
         try {
-            const parsedQuiz = JSON.parse(atob(quiz));
+            const parsedQuiz = JSON.parse(Buffer.from(quiz, "base64").toString("utf-8"));
 
             if (parsedQuiz.__format !== "BFS2QUIZ") throw new Error("Invalid quiz format");
 
             setQuiz(parsedQuiz.info);
-            setQuestions(parsedQuiz.questions);
+            setQuestions(parsedQuiz.questions.sort(() => Math.random() - 0.5));
             return true;
         } catch (e) {
             setQuiz(null);
