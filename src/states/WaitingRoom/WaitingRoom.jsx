@@ -65,7 +65,7 @@ export const WaitingRoom = ({setState}) => {
                             renderAs="svg" onClick={() => setQrShown(!qrShown)}/>
                 </div>
 
-                <h3>Verbinden über die Webseite <span>www.bs2ab.quiz</span> mit Code:</h3>
+                <h3>Verbinden über die Webseite <span>studentclient.pages.dev</span> mit Code:</h3>
 
                 <h1>{roomCode}</h1>
             </div>
