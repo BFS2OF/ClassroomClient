@@ -12,8 +12,6 @@ export const InGame = ({setState}) => {
     const [question, setQuestion] = useState(null);
 
     const nextQuestion = async () => {
-        console.log(questions)
-
         setQuestions(questions => {
             const [question, ...rest] = questions;
 
