@@ -80,7 +80,7 @@ export const FileLoader = () => {
 
     return (
         <div className="fl-wrapper">
-            <input type='file' id='file' ref={inputFile} style={{display: 'none'}} />
+            <input type='file' id='file' ref={inputFile} style={{display: 'none'}} accept=".quizlet"/>
             <div className="center">
                 <div className="center-left">
                     <h1 className="Greet">
