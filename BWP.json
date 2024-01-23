@@ -1,0 +1,163 @@
+{
+  "__format": "BFS2QUIZ",
+  "info": {
+    "title": "Schulz von Thun",
+    "description": "Ein Quiz zu den Kommunikationsmodellen von Schulz von Thun"
+  },
+  "questions": [
+
+    {
+      "title": "Ich habe Durst",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 1
+    },
+
+    {
+      "title": "Ich weiß nicht, was das Grüne in der Suppe ist.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 1
+    },
+
+    {
+      "title": "Ich fühle mich bei dieser Unordnung unwohl.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 1
+    },
+
+    {
+      "title": "Ich bin in Eile.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 1
+    },
+
+    {
+      "title": "Die Bierflasche ist leer.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Da ist etwas Grünes in der Suppe.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Das Zimmer ist unordentlich.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Hier ist das Fahren von 100 km/h erlaubt.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Du fährst 120 km/h.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Das Essen schmeckt anders als sonst.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Hole mir bitte noch ein Bier!",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 3
+    },
+
+    {
+      "title": "Lass das Grüne in der Suppe bitte das nächste Mal weg!",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 3
+    },
+
+    {
+      "title": "Räum dein Zimmer auf!",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 3
+    },
+
+    {
+      "title": "Fahr bitte langsamer!",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 3
+    },
+
+    {
+      "title": "Koche bitte nach Rezept!",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 3
+    },
+
+    {
+      "title": "Du bist ein mieser Koch.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 4
+    },
+
+    {
+      "title": "Du bist furchtbar schlampig und unordentlich.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 4
+    },
+
+    {
+      "title": "Du fährst schlecht und unsicher.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 4
+    },
+
+    {
+      "title": "Ziel ist die Übermittlung von sachlichen und objektiven Informationen",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 2
+    },
+
+    {
+      "title": "Ziel ist es, die subjektive Meinung des Senders preiszugeben bzw. zu erfahren.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 1
+    },
+
+    {
+      "title": "Ziel ist es, das Verhalten des Empfängers zu verändern.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 3
+    },
+
+    {
+      "title": "Ziel ist es, die Beziehung zwischen Sender und Empfänger durch Lob oder Kritik zu zeigen.",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Selbstoffenbarungs-ebene", "Sach-ebene", "Appell-ebene", "Beziehungs-ebene"],
+      "correctAnswer": 4
+    }
+  ]
+}
