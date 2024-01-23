@@ -16,9 +16,22 @@
     {
       "title": "In welcher Stadt befinden wir uns?",
       "type": "SINGLE_CHOICE",
-      "answers": ["Aschaffenburg", "Miltenberg", "Würzburg", "Frankfurt"],
-      "correctAnswer": 1
-    }
+      "answers": ["Miltenberg", "Aschaffenburg","Würzburg", "Frankfurt"],
+      "correctAnswer": 2
+    },
 
+    {
+      "title": "Was ist kein Bundesland?",
+      "type": "SINGLE_CHOICE",
+      "answers": ["Bayern", "Baden-Württemberg", "Sachsen", "Holland"],
+      "correctAnswer": 4
+    },
+
+    {
+      "title": "Was ist 77 + 33?",
+      "type": "SINGLE_CHOICE",
+      "answers": ["100", "120", "90", "110"],
+      "correctAnswer": 4
+    }
   ]
 }
