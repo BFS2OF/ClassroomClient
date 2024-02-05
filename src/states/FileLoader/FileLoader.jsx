@@ -84,7 +84,7 @@ export const FileLoader = () => {
             <div className="center">
                 <div className="center-left">
                     <h1 className="Greet">
-                        Willkommen zurück, <span className="Name">Herr Brod</span>
+                        Willkommen zurück, <span className="Name">Open Day</span>
                     </h1>
                     <p className="Text">
                         Starten Sie ein Quiz indem Sie die Schaltfläche “Datei auswählen”

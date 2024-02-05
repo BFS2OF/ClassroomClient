@@ -14,7 +14,7 @@ export const QuizLoader = ({setState}) => {
             <div className="center">
                 <div className="center-left">
                     <h1 className="Greet">
-                        Willkommen zurück, <span className="Name">Herr Brod</span>
+                        Willkommen zurück, <span className="Name">Open Day</span>
                     </h1>
                     <p className="Text">
                         Das Quiz wurde geladen. Klicke “Raum öffnen”, um den Raum zu erstellen.
