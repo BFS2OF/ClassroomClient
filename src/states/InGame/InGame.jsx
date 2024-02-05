@@ -5,10 +5,12 @@ import Background from "@/states/WaitingRoom/components/Background";
 import {Question} from "@/states/WaitingRoom/components/Question/Question.jsx";
 import SCAnswer from "@/states/WaitingRoom/components/SingleChoiceAnswer";
 import {socket} from "@/common/util/socket.js";
+import Sound from "react-sound";
+import Music from "@/common/assets/music/ingame.wav";
 
 export const InGame = ({setState}) => {
 
-    const {questions, setQuestions} = useContext(QuizContext);
+    const {setQuestions} = useContext(QuizContext);
     const [question, setQuestion] = useState(null);
 
     const nextQuestion = async () => {
@@ -56,6 +58,7 @@ export const InGame = ({setState}) => {
 
     return (
         <div className="game-page">
+            <Sound url={Music} playStatus={Sound.status.PLAYING} loop={true}/>
             <div className="game-page">
                 <Question title={question.title}/>
 
