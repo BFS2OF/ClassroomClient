@@ -35,7 +35,7 @@ export const Ending = () => {
 
             {currentPage === 0 && <div className="podium">
                 {leaderBoard[2] && <div className="place-item third-place">
-                    <div className="player-item">
+                    <div className="player-item podium-player-item">
                         <img src={Avatar} alt="Avatar"/>
                         <h2>{leaderBoard[2].name}</h2>
                     </div>
@@ -43,7 +43,7 @@ export const Ending = () => {
                 </div>}
 
                 {leaderBoard[0] && <div className="place-item first-place">
-                    <div className="player-item">
+                    <div className="player-item podium-player-item">
                         <img src={Avatar} alt="Avatar"/>
                         <h2>{leaderBoard[0].name}</h2>
                     </div>
@@ -51,7 +51,7 @@ export const Ending = () => {
                 </div>}
 
                 {leaderBoard[1] && <div className="place-item second-place">
-                    <div className="player-item">
+                    <div className="player-item podium-player-item">
                         <img src={Avatar} alt="Avatar"/>
                         <h2>{leaderBoard[1].name}</h2>
                     </div>
