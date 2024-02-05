@@ -36,26 +36,26 @@ export const Ending = () => {
             {currentPage === 0 && <div className="podium">
                 {leaderBoard[2] && <div className="place-item third-place">
                     <div className="player-item">
-                        <img src={Avatar}  alt="Avatar"/>
+                        <img src={Avatar} alt="Avatar"/>
                         <h2>{leaderBoard[2].name}</h2>
                     </div>
-                    <div className="podest-block" />
+                    <div className="podest-block"/>
                 </div>}
 
                 {leaderBoard[0] && <div className="place-item first-place">
                     <div className="player-item">
-                        <img src={Avatar}  alt="Avatar"/>
+                        <img src={Avatar} alt="Avatar"/>
                         <h2>{leaderBoard[0].name}</h2>
                     </div>
-                    <div className="podest-block" />
+                    <div className="podest-block"/>
                 </div>}
 
                 {leaderBoard[1] && <div className="place-item second-place">
                     <div className="player-item">
-                        <img src={Avatar}  alt="Avatar"/>
+                        <img src={Avatar} alt="Avatar"/>
                         <h2>{leaderBoard[1].name}</h2>
                     </div>
-                    <div className="podest-block" />
+                    <div className="podest-block"/>
                 </div>}
 
             </div>}
@@ -63,7 +63,11 @@ export const Ending = () => {
             {currentPage === 1 && <div className="leaderboard">
                 {leaderBoard.map((item, index) => (
                     <div className="leaderboard-item" key={index}>
-                        <p>{JSON.stringify(item)}</p>
+                        <div className="leaderboard-profile">
+                            <img src={Avatar} alt="Avatar"/>
+                            <h2>{item.name}</h2>
+                        </div>
+                        <p>{item.points}</p>
                     </div>
                 ))}
             </div>}

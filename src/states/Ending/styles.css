@@ -73,11 +73,40 @@
     background-color: #E8912B;
 }
 
+.player-item {
+    width: 14rem;
+}
+
 .leaderboard {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.leaderboard-profile {
+    display: flex;
+    gap: 1rem;
 }
 
 .leaderboard-item {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #13662F;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 25rem;
+}
 
+.leaderboard-item h2 {
+    margin: 0;
+}
+
+.leaderboard-item img {
+    height: 2rem;
 }
